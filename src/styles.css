@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Righteous';
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #212B46;
+}

@@ -1,0 +1,17 @@
+<div class="home-container">
+    <app-header></app-header>
+    <main>
+        <div class="error" *ngIf="errorMessage">
+            <p>{{ errorMessage }}</p>
+        </div>
+        <h1 class="home-state">{{ selectedCountry }}</h1>
+        <h3 class="home-date-time">{{ time }} <br> {{ date }}</h3>
+        <div class="home-cards">
+            <app-data-card [red]="true" [cardTitle]="cardTitles[1]" [cardValue]="covidDataObject.totalCases === '' ? '0' : covidDataObject.totalCases"></app-data-card>
+            <app-data-card [green]="true" [cardTitle]="cardTitles[2]" [cardValue]="covidDataObject.totalRecovered === '' ? '0' : covidDataObject.totalRecovered"></app-data-card>
+            <app-data-card [gray]="true" [cardTitle]="cardTitles[3]" [cardValue]="covidDataObject.totalDeaths === '' ? '0' : covidDataObject.totalDeaths"></app-data-card>
+        </div>
+        <app-country-select (countryEmitter)="receiveCountry($event)"></app-country-select>
+        <p></p>
+    </main>
+</div>

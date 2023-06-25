@@ -1,0 +1,29 @@
+.card-container{
+    background-color: #cbffff;
+    width: fit-content;
+    padding: 1rem 4rem 3rem 2rem;
+    margin: 2rem;
+}
+
+.card-container p{
+    margin: 1rem 0 0 0;
+}
+
+.icons-holder{
+    display: flex;
+}
+
+.icons-holder svg{
+    width: 3rem;
+}
+
+.card-title{
+    color: #2b2b2b;
+    font-size: 1.2rem;
+    font-family: 'Montserrat';
+}
+
+.card-value{
+    font-size: 2rem;
+    font-family: 'Montserrat';
+}

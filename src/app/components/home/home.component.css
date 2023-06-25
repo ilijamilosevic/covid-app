@@ -1,0 +1,38 @@
+.error{
+    background-color: #ff6666;
+    border: 1px solid #ff3333;
+    margin-top: 2rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.7rem 1.5rem;
+}
+
+.error p{
+    font-family: "Montserrat";
+    margin: 0;
+    color: #fff;
+}
+
+.home-state,
+.home-date-time{
+    font-family: 'Montserrat';
+    color: #fff;
+    text-align: center;
+}
+
+.home-state{
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+.home-date-time{
+    font-size: 1.5rem;
+}
+
+.home-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
